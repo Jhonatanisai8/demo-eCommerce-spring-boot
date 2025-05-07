@@ -12,4 +12,10 @@ public class ProductController {
     public String showProducts() {
         return "products/show";
     }
+
+    @GetMapping(path = "/createProduct")
+    public String goToViewCreateProduct(){
+        return "products/create";
+    }
+
 }
