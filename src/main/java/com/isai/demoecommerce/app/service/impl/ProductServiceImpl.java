@@ -40,4 +40,9 @@ public class ProductServiceImpl
     public void deleteProduct(Integer idProduct) {
         productRepository.deleteById(idProduct);
     }
+
+    @Override
+    public List<Product> findAll() {
+        return productRepository.findAll();
+    }
 }
