@@ -22,6 +22,10 @@ public class User {
 
     @NotEmpty
     @Size(min = 3, max = 50)
+    private String username;
+
+    @NotEmpty
+    @Size(min = 3, max = 50)
     private String firstName;
 
     @NotEmpty
